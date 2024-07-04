@@ -1,0 +1,275 @@
+/* navbar.css */
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+  }
+  
+  .search-bar {
+    margin: 10px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .search-bar input[type='text'] {
+    font-family: "Poppins", sans-serif;
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+  
+  .search-bar input[type='text']::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-bar input[type='text']:focus {
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .search-bar button,
+  .search-bar select {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-left: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover,
+  .search-bar select:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-bar select {
+    appearance: none;
+    padding: 12px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar select:focus {
+    background-color: #333;
+  }
+  
+  /* Gradient animation for buttons */
+  .search-bar button::after,
+  .search-bar select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .search-bar button:hover::after,
+  .search-bar select:hover::after {
+    width: 200%;
+    height: 200%;
+  }
+  
+  /* Neon glow effect for buttons */
+  .search-bar button,
+  .search-bar select {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .search-bar button::before,
+  .search-bar select::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .search-bar button:hover::before,
+  .search-bar select:hover::before {
+    opacity: 1;
+  }
+  
+  /* Glowing text effect for buttons */
+  .search-bar button span,
+  .search-bar select span {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: text-shadow 0.3s ease;
+  }
+  
+  .search-bar button:hover span,
+  .search-bar select:hover span {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+  
+  .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 12px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+  
+  .custom-select option {
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .custom-select option:hover {
+    background-color: #007bff;
+  }
+  
+/* 
+  .addpopup-wrapper{
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    background-color: #0056b3;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+
+  .addpopup-wrapper{
+    display: flex;
+    flex-direction: column;
+    
+  } */
+
+  .addpopup-wrapper {
+    z-index: 1000;
+    position: absolute;
+    top:80%;
+    width: 60%;
+    background-color: #0056b3;
+    font-size: medium ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addpopup-wrapper input[type="text"],
+.addpopup-wrapper input[type="file"],
+.addpopup-wrapper input[type="number"],
+.addpopup-wrapper textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.whole-radio{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.addpopup-wrapper label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.addpopup-wrapper label input {
+    margin-right: 5px;
+}
+
+/* .individual-radio{
+  margin: 10px;
+  margin-left: 20px;
+} */
+
+.addpopup-wrapper button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addpopup-wrapper button:first-of-type {
+    background-color: #e74c3c;
+    color: white;
+    width: 25px;
+  padding: 0px;
+  border-radius: 60px;
+  position: absolute;
+  right: 2%;
+  top:1%;
+}
+
+.addpopup-wrapper button:last-of-type {
+    background-color: #2ecc71;
+    color: white;
+}

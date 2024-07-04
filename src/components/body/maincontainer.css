@@ -1,0 +1,90 @@
+
+
+
+
+
+.MainContainer{
+    width: 90%;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+}
+
+
+.first-line{
+    display: flex;
+}
+
+
+.foo-nofoo button{
+    padding: 10px;
+    font-size: large;
+    font-family: "Poppins", sans-serif;
+    /* background-color: cadetblue; */
+    border: 0;
+    margin: 5px;
+    
+}
+.border {
+    background-color: rgb(123, 134, 123);
+    border-bottom: 5px solid black;
+    margin-bottom: 10px;
+  }
+  
+.heading{
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+.filter-button{
+    padding: 10px;
+    font-size: xx-large;
+    background:none;
+    border: none;
+
+}
+/* FilterButton.css */
+.filter-container{
+    width: 40%;
+    background-color: rgb(170, 195, 186);
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    z-index: 100;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.filtered-option{
+    display: flex;
+    justify-content: center;
+   
+}
+.filtered-item{
+    margin: 10px;
+    background-color: aliceblue;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.apply-button{
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.selected{
+    background-color: rgb(157, 157, 239);
+}

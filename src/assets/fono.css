@@ -1,0 +1,75 @@
+.card-img{
+    
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+    margin-bottom: 10px;
+    
+   
+}
+.card{
+    position: relative;
+   display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 350px;
+    background-color: rgb(173, 173, 229);
+    margin: 10PX;
+    border-radius: 10px;
+    
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.location{
+    background-color: rebeccapurple;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+   
+    color: aliceblue;
+    padding: 5px 15px 5px 15px;
+}
+
+.availability{
+    background-color: rgb(0, 128, 6);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.sold{
+    background-color: rgb(239, 87, 87);
+   
+}
+
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.addedby{
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    background-color: chocolate;
+    border-radius: 10px;
+    
+
+}
